@@ -6,7 +6,7 @@
         content="PO-GS: Perception-Oriented Structured 3D Gaussians for High-Fidelity View-Dependent Rendering">
   <meta name="keywords" content="PO-GS: Perception-Oriented Structured 3D Gaussians for High-Fidelity View-Dependent Rendering">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PEP-GS</title>
+  <title>PO-GS</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="static/css/bootstrap-4.4.1.css">
@@ -86,7 +86,7 @@
         <h2 class="title is-3" style="margin-top: -30px">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-3D Gaussian Splatting (3D-GS) has achieved significant success in real-time, high-quality 3D scene rendering. However, it faces several challenges, including Gaussian redundancy, limited ability to capture view-dependent effects, and difficulties in handling complex lighting. Additionally, methods that use spherical harmonics for color representation often struggle to effectively capture anisotropic components, especially when modeling view-dependent colors under complex lighting conditions, leading to insufficient contrast and unnatural color saturation. To address these limitations, we present PEP-GS, a perceptually-enhanced framework that dynamically predicts Gaussian attributes, including opacity, color, and covariance. We replace traditional spherical harmonics with a Hierarchical Granular-Structural Attention mechanism, which enables more accurate modeling of complex view-dependent color effects. By employing a stable and interpretable framework for opacity and covariance estimation, PEP-GS avoids the removal of essential Gaussians prematurely, ensuring a more accurate scene representation. Furthermore, perceptual optimization is applied to the final rendered images, enhancing perceptual consistency across different views and ensuring high-quality renderings with improved texture fidelity and fine-scale detail preservation. Experimental results demonstrate that PEP-GS outperforms state-of-the-art methods, particularly in challenging scenarios involving view-dependent effects and fine-scale details.          </p>
+3D Gaussian Splatting (3D-GS) has achieved significant success in real-time, high-quality 3D scene rendering. However, it faces several challenges, including Gaussian redundancy, limited ability to capture view-dependent effects, and difficulties in handling complex lighting. Additionally, methods that use spherical harmonics for color representation often struggle to effectively capture anisotropic components, especially when modeling view-dependent colors under complex lighting conditions, leading to insufficient contrast and unnatural color saturation. To address these limitations, we present PO-GS, a perceptually-enhanced framework that dynamically predicts Gaussian attributes, including opacity, color, and covariance. We replace traditional spherical harmonics with a Hierarchical Granular-Structural Attention mechanism, which enables more accurate modeling of complex view-dependent color effects. By employing a stable and interpretable framework for opacity and covariance estimation, PO-GS avoids the removal of essential Gaussians prematurely, ensuring a more accurate scene representation. Furthermore, perceptual optimization is applied to the final rendered images, enhancing perceptual consistency across different views and ensuring high-quality renderings with improved texture fidelity and fine-scale detail preservation. Experimental results demonstrate that PO-GS outperforms state-of-the-art methods, particularly in challenging scenarios involving view-dependent effects and fine-scale details.          </p>
           </p>
         </div>
       </div>
@@ -115,7 +115,7 @@
         <img src="./resources/framework.png" class="center">
         <div class="content has-text-justified">
           <p style="text-align: center;margin-top: 30px">
-            <b>Overview of PEP-GS.</b>
+            <b>Overview of PO-GS.</b>
           </p>
         </div>
 
@@ -145,7 +145,7 @@
         
         <div class="content has-text-justified">
           <p>
-            We present a comparison of brightness and saturation in a challenging train scene from the Tanks&Templates dataset, captured under strong sunlight. The comparison includes Scaffold-GS, PEP-GS (Ours), and Ground Truth.
+            We present a comparison of brightness and saturation in a challenging train scene from the Tanks&Templates dataset, captured under strong sunlight. The comparison includes Scaffold-GS, PO-GS (Ours), and Ground Truth.
           </p>
         </div>
 
