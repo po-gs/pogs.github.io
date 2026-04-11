@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="PO-GS: Perception-Oriented Structured 3D Gaussians for High-Fidelity View-Dependent Rendering">
-  <meta name="keywords" content="PO-GS: Perception-Oriented Structured 3D Gaussians for High-Fidelity View-Dependent Rendering">
+        content="PEP-GS: Perceptually-Enhanced Precise Structured 3D Gaussians for View-Adaptive Rendering">
+  <meta name="keywords" content="PEP-GS: Perceptually-Enhanced Precise Structured 3D Gaussians for View-Adaptive Rendering">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PO-GS</title>
 
@@ -53,11 +53,11 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="margin-bottom: 0"><strong>PO-GS</strong></h1>
-          <h2 class="title is-2 publication-title" style="margin-top: 0; margin-bottom: 0">Perception-Oriented Structured 3D Gaussians for High-Fidelity View-Dependent Rendering</h2>
+          <h1 class="title is-1 publication-title" style="margin-bottom: 0"><strong>PEP-GS</strong></h1>
+          <h2 class="title is-2 publication-title" style="margin-top: 0; margin-bottom: 0">Perceptually-Enhanced Precise Structured 3D Gaussians for View-Adaptive Rendering</h2>
 
           <span class="link-block">
-                <a href="https://github.com/JaxonJin/PO-GS"
+                <a href="https://github.com/JaxonJin/PEP-GS"
                    class="external-link button is-normal is-rounded is-dark disabled">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -86,7 +86,7 @@
         <h2 class="title is-3" style="margin-top: -30px">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-3D Gaussian Splatting (3D-GS) has achieved significant success in real-time, high-quality 3D scene rendering. However, it faces several challenges, including Gaussian redundancy, limited ability to capture view-dependent effects, and difficulties in handling complex lighting. Additionally, methods that use spherical harmonics for color representation often struggle to effectively capture anisotropic components, especially when modeling view-dependent colors under complex lighting conditions, leading to insufficient contrast and unnatural color saturation. To address these limitations, we present PO-GS, a perceptually-enhanced framework that dynamically predicts Gaussian attributes, including opacity, color, and covariance. We replace traditional spherical harmonics with a Hierarchical Granular-Structural Attention mechanism, which enables more accurate modeling of complex view-dependent color effects. By employing a stable and interpretable framework for opacity and covariance estimation, PO-GS avoids the removal of essential Gaussians prematurely, ensuring a more accurate scene representation. Furthermore, perceptual optimization is applied to the final rendered images, enhancing perceptual consistency across different views and ensuring high-quality renderings with improved texture fidelity and fine-scale detail preservation. Experimental results demonstrate that PO-GS outperforms state-of-the-art methods, particularly in challenging scenarios involving view-dependent effects and fine-scale details.          </p>
+Recently, 3D Gaussian Splatting (3D-GS) has achieved significant success in real-time, high-quality 3D scene rendering. However, it faces several challenges, including Gaussian redundancy, limited ability to capture view-dependent effects, and difficulties in handling complex lighting and specular reflections. Additionally, methods that use spherical harmonics for color representation often struggle to effectively capture anisotropic components, especially when modeling view-dependent colors under complex lighting conditions, leading to insufficient contrast and unnatural color saturation. To address these limitations, we introduce PEP-GS, a perceptually-enhanced framework that dynamically predicts Gaussian attributes, including opacity, color, and covariance. We replace traditional spherical harmonics with a Hierarchical Granular-Structural Attention mechanism, which enables more accurate modeling of complex view-dependent color effects. By employing a stable and interpretable framework for opacity and covariance estimation, PEP-GS avoids the removal of essential Gaussians prematurely, ensuring a more accurate scene representation. Furthermore, perceptual optimization is applied to the final rendered images, enhancing perceptual consistency across different views and ensuring high-quality renderings with improved texture fidelity and fine-scale detail preservation. Experimental results demonstrate that PEP-GS outperforms state-of-the-art methods, particularly in challenging scenarios involving view-dependent effects and fine-scale details.
           </p>
         </div>
       </div>
